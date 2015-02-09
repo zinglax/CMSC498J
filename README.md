@@ -149,5 +149,91 @@ distance = the length of the shortest path between two nodes
 - Hypergraphs: a hypergraph is a generalization of a graph in which an edge can connect any number of vertices. Formally, a hypergraph is a pair where is a set of elements called nodes or vertices, and is a set of non-empty subsets of called hyperedges or edges.
 
 
+# LECTURE03
+02-04-2015
 
+BFS and shortest path algorithms
+## Smallest world phenomenon
+- how are all of us connected 
+- mapping between all of the things we track and collect data on.
+
+__connected components__: of a graph is a subset of nodes such that every node in the subset has a path to every other; and the subset is not part of a bigger component. 
+
+## Bredth-first search
+- A general technique for  traversing graphs.
+- can determin if the graph is connect or not. can find connected components
+- can deterimine shortests paths in terms of the number of edges between nodes.
+### How to find connectedness
+- start with s
+- vist all neighbors of s (these are called level-1 nodes)
+- vist all neighbors of level-1 nodes (these are called level-2 nodes)
+- continue...
+
+- is there any nodes that are not touched. if so then you found a connected component of the overall graph
+
+### Dijkstras
+- weighted directed graph
+- source node then destination node and then take the shortest
+
+# LECTURE04
+02-09-2015
+
+## Strong vs Weak Ties
+- Granovetter's Experiment
+- weak ties become more important when getting a job
+
+
+## Triadic Closure
+- If two people in a network have a friend in commo, then there is an increased liklihood they will become friends themselves 
+- The term 'triadic closure' comes from the fact that the B-C edge has the effect of closing the triangle or triangle closure
+- watching a network for a longer period of time:
+ -Multiple edgesform!
+        - some form through triadic closure while others (such as d-g) form even through the two endpoins. 
+- Reasons for triadic closure
+ - Opportunity:
+   - B and C have a common friend A -> ther is an increased chance they will end up knowing each other
+  - Trust:
+   - B and C arefriends with A -> gives them a basis for trusting each other that an arbitrary pair of unconnected people might lack
+ - Incentive:
+  - A may have to bring B and C together (social psychology)                
+
+## Clustering Coefficient
+- A measure to capture the prevalence of Triacic closure
+- Clustering coefficient
+ - Cf of a node A is defined as the probability that two randomly selected frinds of a are friends with eachother
+  - CF(A) = number ofconnectioons btw A's friends / possible number of connections btw A's friends
+  - Range is from 0 - 1 
+  - Basically making a clique with the node your interested in and its neighbors. 
+    
+- emperical study
+  - teenage girls who have a low clustering coefficient in their network of firends are significantly more likely to contemplate suicicde than those whose clustering coefficient is high    
+    
+## Bridges and local bridges
+- Structural Notation!
+- The Edge (A,B) is called a bridge if deleting it would put A and B in two different connected component
+  - Bridges are rare in social networks
+- _Local bridges_: an edge E(A,B) is a local bridge if its endpoints A and B have no friends in common
+  - In other words, if deleting the edge wiould increase the distance btw A and B to a value strictly more than 2
+  - A local bridge cannot be part of a triangle
+- a Local Bridge with a large span. 
+  - span of a local bridge is the distance betwee its endpoins if the edge were deleted
+
+- why acquanticences are more important (weak ties)
+  - A, C, D, and E will all tend to be exposed to similar sources of info, while A's link to B offers her access to things she otherwise wouldn't necessarily hear about
+  
+## Strong triadic closure
+### Links in networks have strength
+- friendship nets (closed friends vs acquantiences)
+- Telco Nets (amount of talking time on the phone)
+### We characterize edges
+- strong (correspoinding with friends), or
+- weak (corresponding to acquaintances)
+   
+
+
+
+
+
+    
+        
 
