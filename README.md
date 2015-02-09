@@ -221,6 +221,9 @@ __connected components__: of a graph is a subset of nodes such that every node i
 - why acquanticences are more important (weak ties)
   - A, C, D, and E will all tend to be exposed to similar sources of info, while A's link to B offers her access to things she otherwise wouldn't necessarily hear about
   
+- End points of a bridge have no friends in common
+l  
+  
 ## Strong triadic closure
 ### Links in networks have strength
 - friendship nets (closed friends vs acquantiences)
@@ -229,11 +232,30 @@ __connected components__: of a graph is a subset of nodes such that every node i
 - strong (correspoinding with friends), or
 - weak (corresponding to acquaintances)
    
+### Strong triadic closure
+- if A has a strong links to B and C, then there must be a link, either weak or strong, btw B and C!
 
 
+## The strength of weak ties
+- the argument is that the weak ties (acquaintances) are social ties that connect us to new sources of information, and teir conceptual "span" in the social network (the local bridge property) is directly related to their weakness as social ties
+- this duel role -as weak connections but also valuable linkes to hard-to-reach parts of the network
+ - is the suprizing strength of weak ties
+ 
+- We defined bridges:
+ - edges with nodes in different connected components.
+- We defined local bridges as:
+ - edges not in triangles!
+- We defined two types of edges:
+ - Strong and Weak Ties
+- An edge is:
+ - either strong or weak, and
+ - either local bridge or not local bridge!
+- We defined strong triadic closure:
+ - Two strong ties imply a third strong / weak tie
+- We discussed local bridges are weak ties
 
+### tie strength in real world nets
+- neighborhood overlap of an edge connecting nodes A and B:
+- Number of nodes who are neighborsof both a and B/ number of nodes who are neighbors of at least one of A or B
 
-
-    
-        
 
