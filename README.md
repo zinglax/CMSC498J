@@ -222,7 +222,7 @@ __connected components__: of a graph is a subset of nodes such that every node i
   - A, C, D, and E will all tend to be exposed to similar sources of info, while A's link to B offers her access to things she otherwise wouldn't necessarily hear about
   
 - End points of a bridge have no friends in common
-l  
+
   
 ## Strong triadic closure
 ### Links in networks have strength
@@ -257,5 +257,90 @@ l
 ### tie strength in real world nets
 - neighborhood overlap of an edge connecting nodes A and B:
 - Number of nodes who are neighborsof both a and B/ number of nodes who are neighbors of at least one of A or B
+
+
+# LECTURE05
+02-11-2015
+
+## centrality
+- what characters an important node in a network?
+ - Most influential people in social nets
+ - Key infastructure nodes 
+ 
+## Centrality measures
+most are similar to eachother
+- Different centrality measures capture different structural characteristics of nodes
+- There is usually a high correlation between these measures
+- Sometimes the most central node might depend on which measure is used
+
+### Degree centrality
+- A node is central if it has ties to many other nodes
+ - Look at the degree of the node (NUMBER OF NEIGHBORS)
+ - Adjacency Matrix is helpful
+ 
+### Standardized Degree Centrality
+- take the degree and divide by the maximum possible degree centrality value!
+
+### Closeness Centrality
+- a node is central if it is "close" to other nodes
+ - look at the disance between the nodes
+ - Closeness: 1/ Distance between nodes
+- Standardized Closeness Centrality
+ - Divide by the maximum possible closeness centrality value!
+ - 1/(N-1)
+- WAIT, WHAT ABOUT UNCONNECTED GRAPHS
+ - How to compute Closeness Centrality in networks with disconnected components?
+  - Only consider the giant component or do graph something?
+  - Only consider nodes that are reachable in paths of length, 1,2,...,k this is called a k Reach step
+ 
+## Betweenness Centrality
+- A node is cental if other nodes have to go through it to get to each other
+ - Look at shortest paths between nodes
+ - For each pair of nodes, compute the shortest paths between them.
+ - For each pair of nodes, determine the fraction of shortest paths that pass through a target node
+ - Sum the fractions over all pairs of nodes.
+ 
+- standardized Betweennes Centrality
+ - Divide by the mazximum possible betweenness centrality value
+  - (N-1(N-2)/2: the number of other pairs of nodes (exclude the node itself)
+ 
+## Clustering
+- aim to develp techniques to idenitify densely connected regions
+ - Breaking a network into a set of densely connected nodes
+ - with sparse connections between groups
+ 
+### Divisive methods
+- breaking the graph into different sections starting from the whole graph
+- Important: Bridges connect tightly-knit groups in networks
+ - to find clusters, remove bridges and local bridges. 
+ - Bridges are rare though in realworld graphs
+ - Issue1: when there are several bridges, which one should we choose
+ - Issue2: what if there are no bridges in the network
+ - Bridges from part of the shortest path between pairs of nodes in different paths in the network. We can utilize this characteristic of bridges
+  - Find the edges that carry most of "traffic" in a network and successively remove edgesof high traffic. 
+
+### Edge Betweenness
+- lets assume 1 unit of 'flow' will pass over all shortest path btw any pair of nodes A and B.
+- Betweenness of an edge is the total amount of flow it carries.
+- If there are k sorted path between A and B, then 1/k units of flow will go along each shortest path. 
+#### Girvan-Newman Algorithm
+- repeat untill no edges are left:
+ - calculate betweenness of edges
+ - Remove edges with highest betweenness.
+
+#### Clever way to compute Edge Betweenness
+- Use Breadth-First search
+
+''' python
+for each node A:
+    # Run BFS on A
+    # Count the nubmer of shortest paths from A to any other node
+    # Determine the amount of traffic from A to other nodes.
+'''
+- Consider the graph from the perspective of one node at atime
+- Determine the amount of traffic from A to others
+
+### Agglomerative methods
+- start with each node representing their own cluster, then you start adding other nodes/merging the existing clusters together.
 
 
