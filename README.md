@@ -368,8 +368,23 @@ for each node A:
 ## Ideas tools and datasets
 
 ### Datasets
+
+Tons of data sets from stanford
 http://snap.stanford.edu/data/index.html
 
+Yahoo answers
+Advertising 
+http://webscope.sandbox.yahoo.com/catalog.php
+Common tags with urls
+
+MOOC databases
+student interaction throughout the course
+
+USDA Dataset
+
+Churny tweets People leaving some service 
+
+Football (superbowl information)
 
 
-
+word2vec - google developed program that tells you how related a word is to a set of other words
