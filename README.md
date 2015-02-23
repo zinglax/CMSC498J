@@ -343,4 +343,33 @@ for each node A:
 ### Agglomerative methods
 - start with each node representing their own cluster, then you start adding other nodes/merging the existing clusters together.
 
+# LECTURE06
+02-18-2015
+
+## Guest Lecture Svitlana Volkova
+
+## Social Media Data
+- you can predict things about someone based on there internet posts 
+
+## 2 approaches to collecting data
+### Static (Batch) Predictions
+- offline training
+- Offline predictions
+- Exploring 6 types of neighborhoods
+
+### Streaming (Online) Inference
+- Offline Training
+- Relying on neighbor content
+- Online predicitons in real time
+
+# LECTURE07
+02-23-2015
+
+## Ideas tools and datasets
+
+### Datasets
+http://snap.stanford.edu/data/index.html
+
+
+
 
