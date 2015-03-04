@@ -8,6 +8,8 @@ avw3161
 
 umiacs.umd.edu/~hadi
 
+Office: AVW 3161, Office hours: Mons 3:30-4:30
+
 http://www.umiacs.umd.edu/~hadi/cmsc498j/index.html
 
 # LECTURE01
@@ -388,3 +390,70 @@ Football (superbowl information)
 
 
 word2vec - google developed program that tells you how related a word is to a set of other words
+
+
+
+Cornell Engaging with massive online coureses
+
+
+# LECTURE08
+2-25-15
+
+## Text Classification
+### Classify
+- email 
+ - whether it is spam or not spam
+- News article
+ - Label Topic article (Health, business, entertainment)
+- Movie reviews
+ - as positive or negative, or neutral
+
+
+#### Classification vs Regression
+Classification: the output variable must be in a set of values (Bucket A or Bucket B) 
+Regression: the output variable can be in a range of values
+
+### Loss functions
+- A loss functon is the function that you get that yeilds error for the input data. meaning the input and the output is not the same when using the funciton vs the actual data. this function will tell you if they are correct or how wrong they are. 
+
+## False positives
+![Precision vs Recall](http://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/350px-Precisionrecall.svg.png)
+
+
+# LECTURE09
+3-2-15
+
+## Homophily
+- The principal that we tend to be similar to our friends
+ - your firends are generally similar to you interms of characteristcs
+- Immutable: Race ethnicity, Physical unchanging things
+- Mutable:
+ - Location, occupancy, affluence, interests, beliefs, etc
+
+### how are links formed
+- Triadic Closure (based on the triangle strong tie relationships help bring friends together)
+ - intrinsic factor
+  - a and b have friend c
+  - a and be are likely to be friends because of c
+- Homophily: Two people attend the same school/work for the same company have a high chance of them getting connected. (people who have the same race are connected to eachother)
+ - contextural factor
+  - a and b are likely to be similar in a number of beyond network dimensions
+
+#### Measuring Homophily
+- if the graph differs from a typical random one and favors some factor of homophily, if they are significantly different then you dont observe homophily
+
+#### Two mechanisms underlying homophily
+- Selection
+ - people or nodes in the network select their friends based on their characteristics
+ - Immutable characteristics
+
+## Affiliation network
+### So
+Membership closure: A friend recommends another friend to an actifity/focus
+Social Influence: An actifiy has a user, the focus is likely to attrach more. 
+
+
+
+
+
+
